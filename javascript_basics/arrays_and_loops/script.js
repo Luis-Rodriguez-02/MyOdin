@@ -17,3 +17,21 @@ for (; i >= 0; i--) {
   }
   output.appendChild(para);
 }
+
+for (const person of people) {
+  if (person === "Phil" || person === "Lola") {
+    refused.textContent += `${Person}, `;
+  } else {
+    admitted.textContent += `${Person}, `;
+  }
+}
+
+let exists = 1;
+while (exists != -1) {}
+
+for (let i = 0; i < )
+
+const refusedText = refused.textConten;t
+const admittedText = admitted.textContent;
+refused.textContent = refused.textContent.slice(0, refusedText.length - 2 + '.');
+refused.textContent = admitted.textContent.slice(0, admittedText.length - 2 + '.')
