@@ -60,3 +60,41 @@ function multiplyNumeric(obj) {
     }
   }
 }
+
+const person = {
+  name: ["Bob", "Smith"],
+};
+
+console.log(console.log(person));
+
+person.name.first = person.name[0];
+person.name.last = person.name[1];
+
+console.log(person);
+
+person.age = 45;
+person["name"]["last"] = "Cratchit";
+
+console.log(person);
+
+console.log("-----------");
+
+const sumOfTripledEvens = (arr) => {
+  let sum = 0;
+  for (let number in arr) {
+    if (number % 2 === 0) {
+      sum += number * 3;
+    }
+  }
+  return sum;
+};
+
+const testArr = [1, 2, 3, 4, 5];
+console.log(sumOfTripledEvens(testArr));
+
+const betterSumOfTripledEvens = (arr) => {
+  return arr
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((sum, currentNumber) => (sum += currentNumber));
+};
