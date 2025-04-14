@@ -93,16 +93,32 @@
 // console.log(sorted4);
 // console.log(arr4);
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
+
+// let users = [john, pete, mary];
+
+// let names = users.map((person) => {
+//   return person.name;
+// });
+
+// console.log(names);
+// console.log(`----------`);
+// console.log(namesV2);
+
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
 
 let users = [john, pete, mary];
 
-let names = users.map((person) => {
-  return person.name;
+const usersMapped = users.map((item) => {
+  return {
+    fullName: `${item.name} ${item.surname}`,
+    id: item.id,
+  };
 });
 
-console.log(names);
-console.log(`----------`);
-console.log(namesV2);
+console.log(usersMapped);
+console.log(usersMapped[0].fullName);
