@@ -107,18 +107,30 @@
 // console.log(`----------`);
 // console.log(namesV2);
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+// let john = { name: "John", surname: "Smith", id: 1 };
+// let pete = { name: "Pete", surname: "Hunt", id: 2 };
+// let mary = { name: "Mary", surname: "Key", id: 3 };
 
-let users = [john, pete, mary];
+// let users = [john, pete, mary];
 
-const usersMapped = users.map((item) => {
-  return {
-    fullName: `${item.name} ${item.surname}`,
-    id: item.id,
-  };
-});
+// const usersMapped = users.map((item) => {
+//   return {
+//     fullName: `${item.name} ${item.surname}`,
+//     id: item.id,
+//   };
+// });
 
-console.log(usersMapped);
-console.log(usersMapped[0].fullName);
+// console.log(usersMapped);
+// console.log(usersMapped[0].fullName);
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr = [pete, john, mary];
+const sortByAge = (arr) => arr.sort((a, b) => a.age - b.age);
+sortByAge(arr);
+console.log(arr);
+console.log(arr[0].name);
+console.log(arr[1].name);
+console.log(arr[2].name);
