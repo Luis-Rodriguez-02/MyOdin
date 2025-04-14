@@ -1,3 +1,1 @@
-  // arr.forEach(num, index) {
-  //   if (num )
-  // }
+let namesV2 = Object.values(...users);
