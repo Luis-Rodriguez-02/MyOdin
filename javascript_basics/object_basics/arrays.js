@@ -135,21 +135,37 @@
 // console.log(arr[1].name);
 // console.log(arr[2].name);
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
-const shuffle = (arr) => {
-  for (let i = arr.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-};
+// const shuffle = (arr) => {
+//   for (let i = arr.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//   }
+// };
 
-console.log(arr);
-shuffle(arr);
-console.log(arr);
-shuffle(arr);
-console.log(arr);
-shuffle(arr);
-console.log(arr);
-shuffle(arr);
-console.log(arr);
+// console.log(arr);
+// shuffle(arr);
+// console.log(arr);
+// shuffle(arr);
+// console.log(arr);
+// shuffle(arr);
+// console.log(arr);
+// shuffle(arr);
+// console.log(arr);
+
+function getAverageAge(users) {
+  const totalAge = users.reduce((sumAges, user) => {
+    return sumAges + user.age;
+  }, 0);
+
+  return totalAge / users.length;
+}
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [john, pete, mary];
+
+console.log(getAverageAge(arr));
