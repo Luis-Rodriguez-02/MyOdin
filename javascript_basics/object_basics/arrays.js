@@ -123,14 +123,33 @@
 // console.log(usersMapped);
 // console.log(usersMapped[0].fullName);
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
-let arr = [pete, john, mary];
-const sortByAge = (arr) => arr.sort((a, b) => a.age - b.age);
-sortByAge(arr);
+// let arr = [pete, john, mary];
+// const sortByAge = (arr) => arr.sort((a, b) => a.age - b.age);
+// sortByAge(arr);
+// console.log(arr);
+// console.log(arr[0].name);
+// console.log(arr[1].name);
+// console.log(arr[2].name);
+
+let arr = [1, 2, 3];
+
+const shuffle = (arr) => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+};
+
 console.log(arr);
-console.log(arr[0].name);
-console.log(arr[1].name);
-console.log(arr[2].name);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
