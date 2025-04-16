@@ -170,27 +170,44 @@
 
 // console.log(getAverageAge(arr));
 
-function unique(arr) {
-  let uniqueValues = [];
+// function unique(arr) {
+//   let uniqueValues = [];
 
-  for (let item of arr) {
-    if (!uniqueValues.includes(item)) {
-      uniqueValues.push(item);
-    }
-  }
-  return uniqueValues;
+//   for (let item of arr) {
+//     if (!uniqueValues.includes(item)) {
+//       uniqueValues.push(item);
+//     }
+//   }
+//   return uniqueValues;
+// }
+
+// let strings = [
+//   "Hare",
+//   "Krishna",
+//   "Hare",
+//   "Krishna",
+//   "Krishna",
+//   "Krishna",
+//   "Hare",
+//   "Hare",
+//   ":-O",
+// ];
+
+// console.log(unique(strings));
+
+function groupById(users) {
+  return users.reduce((obj, user) => {
+    obj[user.id] = user;
+    return obj;
+  }, {});
 }
 
-let strings = [
-  "Hare",
-  "Krishna",
-  "Hare",
-  "Krishna",
-  "Krishna",
-  "Krishna",
-  "Hare",
-  "Hare",
-  ":-O",
+let users = [
+  { id: "john", name: "John Smith", age: 20 },
+  { id: "ann", name: "Ann Smith", age: 24 },
+  { id: "pete", name: "Pete Peterson", age: 31 },
 ];
 
-console.log(unique(strings));
+console.log(users);
+const nObj = groupById(users);
+console.log(nObj);
