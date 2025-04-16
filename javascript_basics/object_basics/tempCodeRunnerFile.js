@@ -1,1 +1,1 @@
-s
+delete comments[indexFound];
