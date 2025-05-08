@@ -1,0 +1,46 @@
+/* General setup */
+@font-face {
+  font-family: "alex_brushregular";
+  src: url("alexbrush-regular.woff2") format("woff2"),
+    url("alexbrush-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "source_code_proregular";
+  src: url("sourcecodepro-regular.woff2") format("woff2"),
+    url("sourcecodepro-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "alex_brushregular";
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "source_code_proregular";
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
