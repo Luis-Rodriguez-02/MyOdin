@@ -1,12 +1,19 @@
-body {
-  font: 1.2em / 1.5 sans-serif;
+a {
+  border: 5px solid grey;
+  display: block;
+  padding: 1.2rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
 /* Add styles here */
-h2 + p {
-  color: red;
+a[title] {
+  border-color: pink;
 }
 
-ul[class*="list"] > li {
-  text-decoration: none;
-  border-bottom: 1px solid grey;
+a[href*="contact"] {
+  border-color: orange;
+}
+
+a[href^="https"] {
+  border-color: green;
 }
