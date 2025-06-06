@@ -3,15 +3,18 @@ body {
 }
 /* Add styles here */
 
-h1 {
-  color: blue;
+#special {
+  background-color: yellow;
 }
 
-h2 {
-  background-color: blue;
-  color: white;
+.alert {
+  border: solid 2px grey;
 }
 
-span {
-  font-size: 200%;
+.alert[class~="stop"] {
+  background-color: red;
+}
+
+.alert[class~="go"] {
+  background-color: green;
 }
