@@ -2,19 +2,26 @@ body {
   font: 1.2em / 1.5 sans-serif;
 }
 /* Add styles here */
-
-#special {
-  background-color: yellow;
+a:link {
+  color: orange;
+}
+a:visited {
+  color: green;
 }
 
-.alert {
-  border: solid 2px grey;
+a:hover {
+  text-decoration: none;
 }
 
-.alert[class~="stop"] {
-  background-color: red;
+.container p:first-child {
+  font-size: 150%;
 }
 
-.alert[class~="go"] {
-  background-color: green;
+.container:first-child::first-line {
+  color: red;
+}
+
+table tr:nth-child(even) {
+  background-color: #333;
+  color: white;
 }
