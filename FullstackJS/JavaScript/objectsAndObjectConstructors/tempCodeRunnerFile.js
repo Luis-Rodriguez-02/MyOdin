@@ -1,17 +1,9 @@
-"use strict";
+alert(rabbit.jumps); // true
 
-// Object Constructors
-// - Convention uppercase letter
+// delete rabbit.jumps;
 
-function Player(name, marker) {
-  this.name = name;
-  this.marker = marker;
-  this.sayName = function () {
-    console.log(`Hi, my name is ${this.name}`);
-  };
-}
+// alert(rabbit.jumps); // null
 
-const player = new Player("steve", "X");
+// delete animal.jumps;
 
-console.log(player["name"]);
-player.sayName();
+// alert(rabbit.jumps); // undefined
