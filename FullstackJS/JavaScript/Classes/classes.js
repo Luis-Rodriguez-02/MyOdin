@@ -109,9 +109,9 @@ class Pizza {
   }
 }
 
-const myPizza = new Pizza("large");
-myPizza.hereYouGo();
-console.log(myPizza.crust);
+// const myPizza = new Pizza("large");
+// myPizza.hereYouGo();
+// console.log(myPizza.crust);
 
 // class SpecialtyPizza extends Pizza {
 //   constructor(pizzaSize) {
@@ -126,3 +126,61 @@ console.log(myPizza.crust);
 
 // const meatLoversPizza = new SpecialtyPizza("medium");
 // meatLoversPizza.slice();
+
+class Person {
+  constructor(name, age, country) {
+    this.name = name;
+    this.age = age;
+    this.country = country;
+  }
+
+  displayDetails() {
+    console.log({ name: this.name, age: this.age, country: this.country });
+  }
+}
+
+const Joe = new Person("Joe", 21, "United States");
+Joe.displayDetails();
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  calculatePerimeter() {
+    console.log(
+      `Perimeter of rectangle with a width of ${this.width} and a height of ${
+        this.height
+      } is ${2 * (this.width + this.height)}`
+    );
+  }
+}
+
+class Vehicle {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  displayDetails() {
+    return { year: this.make, model: this.model, year: this.year };
+  }
+}
+
+class Car extends Vehicle {
+  constructor(make, model, year, doors) {
+    super(make, model, year);
+    this.doors = doors;
+  }
+
+  displayDetails() {
+    return {
+      year: this.make,
+      model: this.model,
+      year: this.year,
+      doors: this.doors,
+    };
+  }
+}
